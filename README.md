@@ -11,13 +11,9 @@ runs some simple unit tests. See src/engine/jobs/ga_queue.tests.cpp.
 
 For this homework:
 
-	You *must* implement the locking queue defined in the paper "Simple, Fast, and Practical Non-Blocking and Blocking
+You *must* implement the locking queue defined in the paper "Simple, Fast, and Practical Non-Blocking and Blocking
 Concurrent Queue Algorithms" by Maged Michael and Michael Scott (locking queue.pdf)
 	
-	For 10% extra credit, you *may* also implement the lock-free version. The
-	lock free version implements a common, but slightly confusing, technique.
+For 10% extra credit, you *may* also implement the lock-free version. The lock free version implements a common, but slightly confusing, technique.
 	
-	For an additional 10% extra credit, implement the push() and pop() operations
-	such that they do not allocate or free from the system heap. Instead
-	preallocate node_count elements on queue construction, and free on queue
-	destruction. This is another common, but challenging, optimization.
+For an additional 10% extra credit, implement the push() and pop() operations such that they do not allocate or free from the system heap. Instead, preallocate node_count elements on queue construction, and free on queue destruction. This is another common, but challenging, optimization.
