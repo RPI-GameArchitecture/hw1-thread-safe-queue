@@ -1,5 +1,5 @@
-# ga2018-homework1
-First homework for RPI Game Architecture 2018.
+# Game Architecture 2019 - HW1
+First homework for RPI Game Architecture 2019.
 
 A thread-safe queue is the backbone of many job/task systems used by games.
 In this homework you will implement a thread-safe queue. The interface for
@@ -11,13 +11,9 @@ runs some simple unit tests. See src/engine/jobs/ga_queue.tests.cpp.
 
 For this homework:
 
-	You *must* implement the locking queue defined in the paper by Michael and
-	Scott: https://www.research.ibm.com/people/m/michael/podc-1996.pdf
+You *must* implement the locking queue defined in the paper "Simple, Fast, and Practical Non-Blocking and Blocking
+Concurrent Queue Algorithms" by Maged Michael and Michael Scott (locking queue.pdf)
 	
-	For 10% extra credit, you *may* also implement the lock-free version. The
-	lock free version implements a common, but slightly confusing, technique.
+For 10% extra credit, you *may* also implement the lock-free version. The lock free version implements a common, but slightly confusing, technique.
 	
-	For an additional 10% extra credit, implement the push() and pop() operations
-	such that they do not allocate or free from the system heap. Instead
-	preallocate node_count elements on queue construction, and free on queue
-	destruction. This is another common, but challenging, optimization.
+For an additional 10% extra credit, implement the push() and pop() operations such that they do not allocate or free from the system heap. Instead, preallocate node_count elements on queue construction, and free on queue destruction. This is another common, but challenging, optimization.
